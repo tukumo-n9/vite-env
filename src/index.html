@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<%_
+/**
+ * ページデータ設定
+ */
+  const metaInfo = {
+    slug: 'top',
+    rootDirectory: './',
+    title: 'トップページ',
+    description: 'トップページの説明です',
+  };
+_%>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('components/_head',metaInfo); %>
+    <link rel="stylesheet" href="./scss/style.scss">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <%- include('components/_header', metaInfo); %>
+
+    <!-- メイン -->
+    <main>
+      <p>TOP PAGE です</p>
+    </main>
+
+    <!--フッター -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
+
