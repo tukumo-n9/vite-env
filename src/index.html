@@ -5,7 +5,7 @@
  */
   const metaInfo = {
     slug: 'top',
-    rootDirectory: './',
+    pageClass: 'top',
     title: 'トップページ',
     description: 'トップページの説明です',
   };
@@ -17,7 +17,7 @@ _%>
     <%- include('components/_head',metaInfo); %>
     <link rel="stylesheet" href="./scss/style.scss">
   </head>
-  <body>
+  <body class="<%= metaInfo.pageClass %>">
     <!-- ヘッダー -->
     <%- include('components/_header', metaInfo); %>
 
