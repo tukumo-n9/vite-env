@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import fs from 'fs';
 import path from 'path';
 import { ViteEjsPlugin } from "vite-plugin-ejs";
-// import json from "./src/lib/pagedata/data.json";
+import liveReload from 'vite-plugin-live-reload';
 
 // HTMLの複数出力を自動化する
 //./src配下のファイル一式を取得
@@ -88,13 +88,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    ViteEjsPlugin(
-      // json,
-      // {
-      //   ejs: {
-      //     beautify : true,
-      //   },
-      // },
-    ),
+    liveReload(['components/**/*.ejs']),
+    ViteEjsPlugin(),
   ],
 });

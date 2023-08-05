@@ -10,12 +10,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "js-beautify": "^1.14.9",
     "postcss": "^8.4.27",
     "sass": "^1.64.1",
     "vite": "^4.2.0",
     "vite-plugin-ejs": "^1.6.4",
-    "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-live-reload": "^3.0.2"
   },
   "browserslist": [
