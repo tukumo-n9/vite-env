@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 import liveReload from 'vite-plugin-live-reload';
+import siteSetting from './siteSetting.json';
 
 // HTMLの複数出力を自動化する
 //./src配下のファイル一式を取得
@@ -89,6 +90,6 @@ export default defineConfig({
   },
   plugins: [
     liveReload(['components/**/*.ejs']),
-    ViteEjsPlugin(),
+    ViteEjsPlugin(siteSetting),
   ],
 });
