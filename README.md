@@ -18,16 +18,17 @@
 - [x] 本番サーバー用と開発サーバー用でfaviconやOGP画像のパスを分ける
 - [x] 見本用ファイルの準備
 - [x] css・JSにキャッシュバスター用のパラメータを付与する
+- [x] build後のHTMLを整形する
+- [x] prettierの設定
+- [x] Markuplintの設定
+- [x] Stylelintの設定
+- [x] ESLintの設定
 - [ ] ヘッダー・フッターのssi化のために、開発ではincludeしながらbuildコマンドで書き出す
-- [ ] prettierの設定
-- [ ] ESLintの設定
-- [ ] Stylelintの設定
 - [ ] PostCSSオプションの導入
-- [ ] Markuplintの設定
-- [ ] build後のHTMLを整形する
 - [ ] storybookの導入
 - [ ] scssのsoucemapを開発で出力する
 - [ ] 設定ファイルにコメントを追加
+- [ ] ファイル読み込みのglobパターン追加プラグインを使ってみる
 - [ ] etc...
 
 ## 説明書の読み方
