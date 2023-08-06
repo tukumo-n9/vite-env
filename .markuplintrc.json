@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "parser": {
+    ".ejs$": "@markuplint/ejs-parser"
+  },
+  "rules": {
+    "character-reference": false,
+    "permitted-contents": false,
+    "required-h1": false
+  }
+}
