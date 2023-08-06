@@ -5,6 +5,7 @@ import path from 'path';
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 import liveReload from 'vite-plugin-live-reload';
 import siteSetting from './siteSetting.json';
+import  sassGlobImports  from  'vite-plugin-sass-glob-import' ;
 
 // HTMLの複数出力を自動化する
 //./src配下のファイル一式を取得
@@ -92,6 +93,7 @@ export default ({ mode }) => {
     plugins: [
       liveReload(['components/**/*.ejs']),
       ViteEjsPlugin({siteSetting, mode}),
+      sassGlobImports(),
     ],
   });
 }

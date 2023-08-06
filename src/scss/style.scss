@@ -1,1 +1,16 @@
-@use "foundation";
+@charset 'utf-8';
+
+// Foundation
+@use 'foundation/**/*.scss';
+
+// Layout
+@use 'layout/**/*.scss';
+
+// Component
+@use 'component/**/*.scss';
+
+// Project
+@use 'project/**/*.scss';
+
+// Utility
+@use 'utility/**/*.scss';

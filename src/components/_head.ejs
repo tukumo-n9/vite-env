@@ -5,11 +5,13 @@
     rootDirectory = siteSetting.siteDomainProduction;
   }
 %>
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title><%= title %></title>
-<link rel="icon" href="<%- rootDirectory %>assets/images/vite.svg" type="image/svg+xml">
+<link rel="manifest" href="<%- rootDirectory %>manifest.webmanifest">
+<link rel="icon" href="<%- rootDirectory %>assets/images/meta/favicon.ico" sizes="any">
+<link rel="icon" href="<%- rootDirectory %>assets/images/meta/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="<%- rootDirectory %>assets/images/meta/apple-touch-icon.png">
 <meta name="description" content="<%- description %>">
 <meta property="og:title" content="<%= title %>" />
 <meta property="og:description" content="<%- description %>" />

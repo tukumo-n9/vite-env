@@ -1,9 +1,9 @@
 <header>
-  <h1>
-    <%= title %>
-  </h1>
-  <p>
-    <%- description %>
-  </p>
+  <% if(slug === "top") { %>
+    <h1><%= title %></h1>
+  <% } else { %>
+    <p><%= title %></p>
+  <% } %>
+  <p><%- description %></p>
   <p>mode:<%- mode %></p>
 </header>

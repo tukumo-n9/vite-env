@@ -15,7 +15,8 @@
     "sass": "^1.64.1",
     "vite": "^4.2.0",
     "vite-plugin-ejs": "^1.6.4",
-    "vite-plugin-live-reload": "^3.0.2"
+    "vite-plugin-live-reload": "^3.0.2",
+    "vite-plugin-sass-glob-import": "^2.0.0"
   },
   "browserslist": [
     "last 3 versions",

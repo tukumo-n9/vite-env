@@ -15,12 +15,14 @@
 - [x] bodyもしくはmainタグにページごとのclassを付与したい
 - [x] サイト全体の情報をまとめ、EJSで読み込む（OGP用の本番パスなど）
 - [x] 本番サーバー用と開発サーバー用でfaviconやOGP画像のパスを分ける
+- [x] 見本用ファイルの準備
 - [ ] ヘッダー・フッターのssi化のために、開発ではincludeしながらbuildコマンドで書き出す
 - [ ] prettierの設定
 - [ ] ESLintの設定
 - [ ] Stylelintの設定
 - [ ] PostCSSオプションの導入
 - [ ] Markuplintの設定
+- [ ] build後のHTMLを整形する
 - [ ] etc...
 
 ## 使い方
