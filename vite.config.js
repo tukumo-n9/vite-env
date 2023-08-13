@@ -78,6 +78,9 @@ const chacheBustingCssJs = () => {
 export default ({ mode }) => {
 	return defineConfig({
 		root: './src', //開発ディレクトリ設定
+		css: {
+			devSourcemap: true // this one
+		},
 		build: {
 			outDir: '../dist', //出力場所の指定
 			emptyOutDir: true, //出力先のディレクトリを毎回空にする

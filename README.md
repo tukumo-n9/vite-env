@@ -23,16 +23,16 @@
 - [x] Markuplintの設定
 - [x] Stylelintの設定
 - [x] ESLintの設定
+- [x] scssのsoucemapを開発で出力する
 - [ ] ヘッダー・フッターのssi化のために、開発ではincludeしながらbuildコマンドで書き出す
 - [ ] PostCSSオプションの導入
 - [ ] storybookの導入
-- [ ] scssのsoucemapを開発で出力する
 - [ ] 設定ファイルにコメントを追加
 - [ ] ファイル読み込みのglobパターン追加プラグインを使ってみる
 - [ ] etc...
 
 ## 説明書の読み方
-Ctrl + k → v でプレビューを開いてください。
+Command(Ctrl) + k → v でプレビューを開いてください。
 
 ## 使い方
 
