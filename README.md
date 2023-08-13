@@ -24,8 +24,8 @@
 - [x] Stylelintの設定
 - [x] ESLintの設定
 - [x] scssのsoucemapを開発で出力する
+- [x] PostCSSオプションの導入
 - [ ] ヘッダー・フッターのssi化のために、開発ではincludeしながらbuildコマンドで書き出す
-- [ ] PostCSSオプションの導入
 - [ ] storybookの導入
 - [ ] 設定ファイルにコメントを追加
 - [ ] ファイル読み込みのglobパターン追加プラグインを使ってみる
