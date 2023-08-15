@@ -4,4 +4,5 @@ body {
   font-size: rem(16);
   font-family: var(--font-en), var(--font-jp), sans-serif;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
