@@ -78,6 +78,9 @@ const chacheBustingCssJs = () => {
 export default ({ mode }) => {
 	return defineConfig({
 		root: './src', //開発ディレクトリ設定
+		server: {
+			open: true,
+		},
 		css: {
 			devSourcemap: true // this one
 		},
