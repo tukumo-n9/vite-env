@@ -12,9 +12,12 @@
     "lint:style": "stylelint 'src/**/*.{css,scss}'",
     "lint:es": "eslint 'src/**/*.js'",
     "format:prettier": "prettier --write 'dist/**/*.html'",
-    "format:beautify": "html-beautify 'dist/**/*.html'"
+    "format:beautify": "html-beautify 'dist/**/*.html'",
+    "fractal": "fractal start --port 4003 --sync --watch",
+    "fractal:build": "fractal build"
   },
   "devDependencies": {
+    "@frctl/fractal": "^1.5.15",
     "@markuplint/ejs-parser": "^3.9.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.46.0",
@@ -36,5 +39,11 @@
     "> 5%",
     "Firefox ESR",
     "not dead"
-  ]
+  ],
+  "fractal": {
+    "main": "fractal.config.cjs"
+  },
+  "dependencies": {
+    "vite-plugin-ssinc": "^1.0.8"
+  }
 }

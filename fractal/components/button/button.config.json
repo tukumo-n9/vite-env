@@ -1,0 +1,8 @@
+{
+	"title": "Button",
+	"status": "prototype",
+	"context": {
+		"button-text": "Click me!",
+		"is-sparkly": true
+	}
+}
