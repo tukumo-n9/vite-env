@@ -1,0 +1,22 @@
+# やりたいこと
+- [x] 複数ページのHTMLの書き出し
+- [x] Sassのコンパイル
+- [x] Sass・JSのバンドル
+- [x] HTMLファイルの分割（EJS）
+- [x] HTMLファイルに書いた変数を分割ファイルに渡す（meta情報などをHTMLファイルに書きたい）
+- [x] bodyもしくはmainタグにページごとのclassを付与したい
+- [x] サイト全体の情報をまとめ、EJSで読み込む（OGP用の本番パスなど）
+- [x] 本番サーバー用と開発サーバー用でfaviconやOGP画像のパスを分ける
+- [x] 見本用ファイルの準備
+- [x] css・JSにキャッシュバスター用のパラメータを付与する
+- [x] build後のHTMLを整形する
+- [x] prettierの設定
+- [x] Markuplintの設定
+- [x] Stylelintの設定
+- [x] ESLintの設定
+- [x] scssのsoucemapを開発で出力する
+- [x] PostCSSオプションの導入
+- [x] storybookの導入
+- [ ] ヘッダー・フッターのssi化のために、開発ではincludeしながらbuildコマンドで書き出す
+- [ ] 設定ファイルにコメントを追加
+- [ ] etc...
