@@ -1,9 +1,10 @@
+<!-- ヘッダー -->
 <header>
-  <% if(slug === "top") { %>
-    <h1><%= title %></h1>
+  <% if(meta.slug === "top") { %>
+    <h1><%= meta.title %></h1>
   <% } else { %>
-    <p><%= title %></p>
+    <p><%= meta.title %></p>
   <% } %>
-  <p><%- description %></p>
+  <p><%- meta.description %></p>
   <p>mode:<%- mode %></p>
 </header>

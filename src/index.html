@@ -1,8 +1,5 @@
-<!DOCTYPE html>
+<%# ページデータ %>
 <%_
-/**
- * ページデータ設定
- */
   const metaInfo = {
     slug: 'top',
     pageClass: 'top',
@@ -10,25 +7,12 @@
     description: 'トップページの説明です',
   };
 _%>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <%- include('components/_head',metaInfo); %>
-    <link rel="stylesheet" href="./scss/style.scss">
-  </head>
-  <body class="<%= metaInfo.pageClass %>">
-    <!-- ヘッダー -->
-    <%- include('components/_header', metaInfo); %>
-
-    <!-- メイン -->
-    <main>
-      <p>TOP PAGE です</p>
-      <img src="/assets/images/top/sample.jpg" alt="サンプル画像です。">
-    </main>
-
-    <!--フッター -->
-    <script type="module" src="./js/main.js"></script>
-  </body>
-</html>
-
+<%# ファイル上部 %>
+<%- include('components/_head', {meta: metaInfo}); %>
+<!-- メイン -->
+<main>
+  <p>TOP PAGE です</p>
+  <img src="/assets/images/top/sample.jpg" alt="サンプル画像です。">
+</main>
+<%# ファイル下部 %>
+<%- include('components/_foot', {meta: metaInfo}); %>
