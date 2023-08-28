@@ -84,7 +84,7 @@ export default ({ mode }) => {
 	return defineConfig({
 		root: './src', //開発ディレクトリ設定
 		server: {
-			open: true,
+			host: true,
 		},
 		css: {
 			devSourcemap: true // this one
