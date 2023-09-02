@@ -17,12 +17,12 @@
     }
   }
   @else if ($type == 'lg') {
-    @media screen and (min-width: $breakPoint-lg), print {
+    @media screen and (min-width: $breakpoint-lg), print {
       @content;
     }
   }
   @else if ($type == 'xl') {
-    @media screen and (min-width: $breakPoint-xl), print {
+    @media screen and (min-width: $breakpoint-xl), print {
       @content;
     }
   }

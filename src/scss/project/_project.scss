@@ -5,4 +5,19 @@ p {
   @include media(sm) {
     color: blue;
   }
+  @include media(md) {
+    color: green;
+  }
+  @include media(lg) {
+    color: yellow;
+  }
+  @include media(xl) {
+    color: purple;
+  }
+  @include hover {
+    color: orange;
+  }
+  @include active {
+    color: pink;
+  }
 }
