@@ -2,7 +2,8 @@
 Vite を使ったWebサイト制作環境・テンプレートです。
 
 ## 説明書の読み方<!-- omit in toc -->
-Command(Ctrl) + k → v でプレビューを開いてください。
+Command(Ctrl) + k → v でプレビューを開いてください。  
+見出しに飛びたい時は、Command(Ctrl) + p → # を入力して、選んでください。
 
 ## 目次<!-- omit in toc -->
 - [使い方](#使い方)
