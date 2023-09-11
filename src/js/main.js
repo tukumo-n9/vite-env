@@ -1,4 +1,4 @@
-import { getUserAgentDatas } from './getUserAgentDatas.js';
+import { getUserAgentDatas } from './helper/getUserAgentDatas.js';
 import { top as pageTop } from './pages/top.js';
 import { subpage as pageSubpage } from './pages/subpage.js';
 
@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 
   getUserAgentDatas();
 
-  const classList = document.body.classList;
-  if(classList.contains('top')) pageTop();
-  if(classList.contains('subpage')) pageSubpage();
+  const pageClass = document.body.classList;
+  if(pageClass.contains('top')) pageTop();
+  if(pageClass.contains('subpage')) pageSubpage();
 });
