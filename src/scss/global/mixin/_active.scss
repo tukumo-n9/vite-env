@@ -1,7 +1,5 @@
 @mixin active {
   @media (hover: none) and (pointer: coarse) {
-    &:active {
-      @content;
-    }
+    @content;
   }
 }
