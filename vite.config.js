@@ -18,7 +18,7 @@ function readDirectory(dirPath) {
 
 		if (fs.statSync(itemPath).isDirectory()) {
 			// componentsディレクトリを除外する
-			if (item === 'components') {
+			if (item === 'includes') {
 				continue;
 			}
 
@@ -87,7 +87,7 @@ export default ({ mode }) => {
 			host: true,
 		},
 		css: {
-			devSourcemap: true // this one
+			devSourcemap: true, //開発時のCSSソースマップを有効にする
 		},
 		build: {
 			outDir: '../dist', //出力場所の指定
@@ -116,7 +116,7 @@ export default ({ mode }) => {
 			},
 		},
 		plugins: [
-			liveReload(['components/**/*.ejs']),
+			liveReload(['includes/**/*.ejs']),
 			ViteEjsPlugin({siteSetting, mode}),
 			sassGlobImports(),
 			{

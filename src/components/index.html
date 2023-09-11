@@ -8,10 +8,10 @@
   };
 _%>
 <%# ファイル上部 %>
-<%- include('components/_head', {meta: metaInfo}); %>
+<%- include('includes/layout/_head', {meta: metaInfo}); %>
 <!-- メイン -->
 <main>
-  <h1>COMPOMEMTS PAGE</h1>
+  <h1>COMPONENTS PAGE</h1>
   <h2>アコーディオン</h2>
   <details class="c-accordion">
     <summary>アコーディオンとは？</summary>
@@ -26,4 +26,4 @@ _%>
   <button>モーダルを開く</button>
 </main>
 <%# ファイル下部 %>
-<%- include('components/_foot', {meta: metaInfo}); %>
+<%- include('includes/layout/_foot', {meta: metaInfo}); %>

@@ -10,7 +10,7 @@
 <head>
   <meta charset="UTF-8" />
   <!-- GAタグのhead部分 -->
-  <%- include('_ga-head'); %>
+  <%- include('includes/analytics/_head'); %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= meta.title %></title>
   <link rel="manifest" href="<%- rootDirectory %>manifest.webmanifest">
@@ -25,5 +25,5 @@
 </head>
 <body class="<%= meta.pageClass %>">
   <!-- GAタグのbody部分 -->
-  <%- include('_ga-body'); %>
-  <%- include('_header',  {meta: meta}); %>
+  <%- include('includes/analytics/_body'); %>
+  <%- include('includes/components/_header',  {meta: meta}); %>
