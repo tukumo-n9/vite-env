@@ -49,6 +49,11 @@ export default function (plop) {
           path: jsPath + "{{slug}}.js",
           templateFile: ".plop/script.js.hbs",
         },
+        {
+          type: 'append',
+          path: 'src/js/main.js',
+          template: "import { {{slug}} as page{{pascalCase slug}} } from './pages/{{slug}}.js';",
+        },
       ];
     },
   });
