@@ -1,0 +1,22 @@
+{
+	"active": {
+		"scope": "scss",
+		"prefix": ";active",
+		"body": [
+			"@include active {",
+			"\t$1",
+			"}"
+		],
+		"description": "active pseudo class"
+	},
+	"mediaQuery": {
+		"scope": "scss",
+		"prefix": ";media",
+		"body": [
+			"@include media($1) {"
+			"\t$2"
+			"}$0"
+		],
+		"description": "media query"
+	}
+}

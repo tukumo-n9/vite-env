@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "oderwat.indent-rainbow",
+    "eamodio.gitlens",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ritwickdey.liveserver",
+    "yzhang.markdown-all-in-one",
+    "bmewburn.vscode-intelephense-client",
+    "gencer.html-slim-scss-css-class-completion",
+    "simonsiefke.svg-preview",
+    "digitalbrainstem.javascript-ejs-support",
+    "figma.figma-vscode-extension"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	"default export": {
+		"scope": "javascript",
+		"prefix": ";exd",
+		"body": [
+			"export default function ${1:functionName}() {",
+			"\t${2}",
+			"}"
+		],
+		"description": "default export"
+	},
+	"named export": {
+		"scope": "javascript",
+		"prefix": ";exn",
+		"body": [
+			"export const ${1:functionName} = (${2}) => {",
+			"\t${3}",
+			"}"
+		],
+		"description": "default export"
+	},
+}

@@ -1,0 +1,10 @@
+{
+	"img": {
+		"scope": "html,ejs",
+		"prefix": ";img",
+		"body": [
+			"<img src=\"${1:img.jpg}\" alt=\"${2}\" width=\"${3}\" height=\"${4}\" \/>"
+		],
+		"description": "media query"
+	}
+}
