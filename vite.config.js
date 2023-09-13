@@ -92,6 +92,7 @@ export default ({ mode }) => {
 		build: {
 			outDir: '../dist', //出力場所の指定
 			emptyOutDir: true, //出力先のディレクトリを毎回空にする
+			// cssMinify: false, //CSSの圧縮を無効にする
 			rollupOptions: { //ファイル出力設定
 				output: {
 					assetFileNames: (assetInfo) => {

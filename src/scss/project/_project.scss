@@ -20,4 +20,7 @@ p {
   @include active {
     color: pink;
   }
+  @include media(sm) {
+    color: steelblue;
+  }
 }

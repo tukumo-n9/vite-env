@@ -1,8 +1,8 @@
 module.exports = {
   plugins: {
+    'postcss-normalize-charset': {},
     autoprefixer: {},
-  },
-  'css-declaration-sorter': {
-    order: 'concentric-css'
+    'postcss-sort-media-queries': {},
+    'css-declaration-sorter': {order: 'concentric-css'},
   },
 }
