@@ -18,9 +18,12 @@
   <link rel="icon" href="<%- rootDirectory %>assets/images/meta/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="<%- rootDirectory %>assets/images/meta/apple-touch-icon.png">
   <meta name="description" content="<%- meta.description %>">
-  <meta property="og:title" content="<%= meta.title %>" />
-  <meta property="og:description" content="<%- meta.description %>" />
+  <meta property="og:type" content="website" />
   <meta property="og:site_name" content="<%= siteSetting.siteName %>">
+  <meta property="og:title" content="<%= meta.title %>" />
+  <meta property="og:url" content="<%- rootDirectory %><%= meta.pagePath %>" />
+  <meta property="og:description" content="<%- meta.description %>" />
+  <meta property="og:image" content="<%- rootDirectory %>assets/images/meta/ogp.png" />
   <link rel="stylesheet" href="/scss/style.scss">
 </head>
 <body class="<%= meta.pageClass %>">
