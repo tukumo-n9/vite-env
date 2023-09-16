@@ -10,12 +10,12 @@ export default function (plop) {
       {
         type: "input",
         name: "slug",
-        message: "ページのスラッグを入力してください（スキップできます）",
+        message: "ページのスラッグを入力してください",
       },
       {
         type: "input",
         name: "pageClass",
-        message: "bodyタグにつけるClass名を入力してください（スキップできます）",
+        message: "bodyタグにつけるClass名を入力してください",
       },
       {
         type: "input",
@@ -52,8 +52,15 @@ export default function (plop) {
         {
           type: 'append',
           path: 'src/js/main.js',
+          pattern: /(\/\/ IMPORT)/g,
           template: "import { {{slug}} as page{{pascalCase slug}} } from './pages/{{slug}}.js';",
         },
+        {
+          type: 'append',
+          path: 'src/js/main.js',
+          pattern: /(\/\/ USE)/g,
+          template: "  if(pageClass.contains('{{pageClass}}')) page{{pascalCase slug}}();",
+        }
       ];
     },
   });
