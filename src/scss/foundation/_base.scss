@@ -1,8 +1,10 @@
 @use "../global" as *;
 
 body {
-  font-size: rem(16);
-  font-family: var(--font-en), var(--font-jp), sans-serif;
+  font-family: $font-base;
+  // font-size: rem(16);
+  // line-height: lh(16, 24);
+  @include fz(16, 24);
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }

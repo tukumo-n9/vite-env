@@ -1,0 +1,6 @@
+@use "../function/" as *;
+
+@mixin fz($fz, $lh) {
+  font-size: rem($fz);
+  line-height: lh($fz, $lh);
+}

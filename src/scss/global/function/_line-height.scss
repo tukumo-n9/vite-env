@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@function lh($px, $lh) {
+  @return math.div($lh, $px);
+}
