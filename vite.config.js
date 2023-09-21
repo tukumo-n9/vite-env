@@ -17,8 +17,13 @@ function readDirectory(dirPath) {
 		const itemPath = path.join(dirPath, item);
 
 		if (fs.statSync(itemPath).isDirectory()) {
-			// componentsディレクトリを除外する
+			// includesディレクトリを除外する
 			if (item === 'includes') {
+				continue;
+			}
+
+			// componentsディレクトリを除外する
+			if (item === 'components') {
 				continue;
 			}
 
