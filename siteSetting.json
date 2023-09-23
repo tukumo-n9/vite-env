@@ -1,12 +1,8 @@
 {
-  "siteName": "Vite テンプレート",
+  "siteName": "サイト名",
   "siteDomainProduction": "https://production.com/",
   "siteDomainDevelopment": "/",
   "metaAuthor": "サイト所有者名",
-  "metaTwitterSite": "サイト名(Twitter用)",
-  "metaTwitterCreator": "サイト所有者名(Twitter用)",
-  "publishFileName": "Vite",
-  "themeColor": "#000",
-  "useWebp": false,
-  "useSSI": true
+  "metaTwitterSite": "WebサイトのTwitterID(任意)",
+  "metaTwitterCreator": "サイト所有者のTwitterID(任意)"
 }

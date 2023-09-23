@@ -7,23 +7,27 @@
 %>
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="UTF-8" />
   <!-- GAタグのhead部分 -->
   <%- include('includes/analytics/_head'); %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= meta.title %></title>
   <link rel="manifest" href="<%- rootDirectory %>manifest.webmanifest">
-  <link rel="icon" href="<%- rootDirectory %>assets/images/meta/favicon.ico" sizes="any">
-  <link rel="icon" href="<%- rootDirectory %>assets/images/meta/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="<%- rootDirectory %>assets/images/meta/apple-touch-icon.png">
+  <link rel="icon" href="<%- rootDirectory %>favicon.ico" sizes="any">
+  <link rel="icon" href="<%- rootDirectory %>favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="<%- rootDirectory %>apple-touch-icon.png">
   <meta name="description" content="<%- meta.description %>">
-  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
   <meta property="og:site_name" content="<%= siteSetting.siteName %>">
-  <meta property="og:title" content="<%= meta.title %>" />
-  <meta property="og:url" content="<%- rootDirectory %><%= meta.pagePath %>" />
-  <meta property="og:description" content="<%- meta.description %>" />
-  <meta property="og:image" content="<%- rootDirectory %>assets/images/meta/ogp.png" />
+  <meta property="og:title" content="<%= meta.title %>">
+  <meta property="og:url" content="<%- rootDirectory %><%= meta.pagePath %>">
+  <meta property="og:description" content="<%- meta.description %>">
+  <meta property="og:image" content="<%- rootDirectory %>ogp.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="<%- siteSetting.metaTwitterSite %>">
+  <meta name="twitter:creator" content="<%- siteSetting.metaTwitterCreator %>">
   <link rel="stylesheet" href="/scss/style.scss">
 </head>
 <body class="<%= meta.pageClass %>">
